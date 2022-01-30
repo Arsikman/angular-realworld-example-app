@@ -8,14 +8,14 @@ pipeline {
   stages {
     stage('Preparing stage') {
       steps {
-        sh '''sudo apt install npm
+        sh '''apt install npm
 '''
       }
     }
 
     stage('Build and Run') {
       steps {
-        sh 'sudo ng serve'
+        sh 'ng serve'
       }
     }
 
