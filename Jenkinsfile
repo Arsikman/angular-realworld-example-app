@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'node:lts'
+      image 'node:alpine'
     }
 
   }
@@ -15,7 +15,7 @@ pipeline {
 
     stage('Build and Run') {
       steps {
-        sh 'ng serve'
+        sh 'sudo ng serve'
       }
     }
 
