@@ -6,9 +6,16 @@ pipeline {
 
   }
   stages {
-    stage('error') {
+    stage('Preparing stage') {
       steps {
-        sh 'nodejs --version'
+        sh '''sudo apt install npm
+'''
+      }
+    }
+
+    stage('Build and Run') {
+      steps {
+        sh 'sudo ng serve'
       }
     }
 
