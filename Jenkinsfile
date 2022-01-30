@@ -8,14 +8,7 @@ pipeline {
   stages {
     stage('Preparing stage') {
       steps {
-        sh '''sudo apt-get install npm
-'''
-      }
-    }
-
-    stage('Build and Run') {
-      steps {
-        sh 'sudo ng serve'
+        sh 'whoami'
       }
     }
 
