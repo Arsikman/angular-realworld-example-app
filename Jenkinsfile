@@ -6,9 +6,9 @@ pipeline {
 
   }
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        sh 'nodejs -version'
+        sh 'nodejs --version'
       }
     }
 
