@@ -8,7 +8,8 @@ pipeline {
   stages {
     stage('Preparing stage') {
       steps {
-        sh 'pwd'
+        sh '''pwd
+whoami'''
       }
     }
 
