@@ -9,7 +9,7 @@ pipeline {
     stage('Preparing stage') {
       steps {
         sh '''pwd
-whoami'''
+id'''
       }
     }
 
