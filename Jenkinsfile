@@ -9,9 +9,7 @@ pipeline {
     stage('Preparing stage') {
       steps {
         sh '''sudo apt-get update
-nodejs --version
-npm --version
-exit 0'''
+nodejs --version'''
       }
     }
 
