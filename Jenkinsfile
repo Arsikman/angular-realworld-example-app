@@ -10,7 +10,8 @@ pipeline {
       steps {
         sh '''sudo apt-get update
 nodejs --version
-npm --version'''
+npm --version
+exit 0'''
       }
     }
 
