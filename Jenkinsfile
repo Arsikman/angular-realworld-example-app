@@ -27,7 +27,7 @@ nodejs --version'''
 
     stage('Deploy') {
       steps {
-        sh 'sudo mv ./* /var/www/html/'
+        sh 'npm start'
       }
     }
 
