@@ -27,7 +27,7 @@ nodejs --version'''
 
     stage('Deploy') {
       steps {
-        sh 'npm start'
+        sh 'ng serve'
       }
     }
 
