@@ -15,7 +15,7 @@ nodejs --version'''
 
     stage('npm install') {
       steps {
-        sh 'sudo apt-get install npm'
+        sh 'sudo apt-get install -y npm'
       }
     }
 
