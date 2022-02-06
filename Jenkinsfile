@@ -1,14 +1,19 @@
-pipeline{
+pipeline {
   agent any
-  stages{
-    stage("new stage"){
-      step("Hello"){
-       sh "echo hello world" 
+  stages {
+    stage('Build') {
+      steps {
+        sh 'pwd' 
       }
-      stage("hello"){
-        step("new hello"){
-         sh "echo bye-bye" 
-        }
+    }
+    stage('Run') {
+      steps {
+        sh 'ls -la' 
+      }
+    }
+    stage('Deploy') {
+      steps {
+        sh 'echo "everything is ok"' 
       }
     }
   }
