@@ -25,6 +25,5 @@ nodejs --version'''
         sh 'ng serve'
       }
     }
-
   }
 }
