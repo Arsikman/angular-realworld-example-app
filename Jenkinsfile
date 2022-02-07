@@ -1,8 +1,5 @@
 pipeline {
-  agent {
-    node {
-      label 'general'
-    }
+  agent any
 
   }
   stages {
